@@ -125,12 +125,12 @@
     if (isMobileNavAnim) return;
 
     startMobileNavAnim();
-    $container.toggleClass('');
+    $container.toggleClass('mobile-nav-on');
     stopMobileNavAnim();
   });
 
   $('#wrap').on('click', function(){
-    if (isMobileNavAnim || !$container.hasClass('')) return;
+    if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
 
     $container.removeClass('mobile-nav-on');
   });
